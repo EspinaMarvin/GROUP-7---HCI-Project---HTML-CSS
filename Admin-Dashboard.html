@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+
+    <div class="item header">
+      <h2>Serenity Apartment — Admin Dashboard</h2>
+      <div class="header-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026 — 11:30 AM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item sidebar">
+      <div class="sidebar-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026</span>
+        </div>
+      </div>
+      <hr class="sidebar-divider" />
+      <nav>
+        <ul>
+          <li><a href="Admin-Dashboard.html" style="background:#4F7C82; color:#fff;">Dashboard Overview</a></li>
+          <li><a href="Admin-Tenants.html">Tenants</a></li>
+          <li><a href="Admin-Billings.html">Billings</a></li>
+          <li><a href="Admin-Announcement.html">Announcements</a></li>
+          <li><a href="Admin-Reservation.html">Reservations</a></li>
+          <li><a href="Admin-Ocular.html">Ocular Schedule</a></li>
+          <li><a href="Admin-Maintenance.html">Maintenance Requests</a></li>
+          <li><a href="Admin-Helpdesk.html">Help Desk</a></li>
+        </ul>
+      </nav>
+      <hr class="sidebar-divider" />
+      <a href="logout.html" class="logout-btn">Logout</a>
+    </div>
+
+    <div class="item content">
+      <!-- STAT CARDS -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Total Units</h3>
+          <div class="stat-number">40</div>
+        </div>
+        <div class="stat-card">
+          <h3>Total Tenants</h3>
+          <div class="stat-number">24</div>
+        </div>
+        <div class="stat-card">
+          <h3>Available Units</h3>
+          <div class="stat-number">16</div>
+        </div>
+      </div>
+
+      <!-- BILLING CARDS -->
+      <div class="billing-grid">
+        <div class="billing-card upcoming">
+          <h3>Upcoming Due Dates</h3>
+          <div class="tenant-entry">
+            <p><strong>Marvin Espina — Unit 16 — Sept 27, 2026</strong></p>
+            <p>Monthly Rental Fee: ₱3500</p>
+            <p>Electric Bill: ₱1250 | Water Bill: ₱450</p>
+            <p><strong>Total Due: ₱5200</strong></p>
+          </div>
+          <div class="tenant-entry">
+            <p><strong>Ysabel Lozada — Unit 22 — Sept 30, 2026</strong></p>
+            <p>Monthly Rental Fee: ₱3500</p>
+            <p>Electric Bill: ₱1100 | Water Bill: ₱400</p>
+            <p><strong>Total Due: ₱5000</strong></p>
+          </div>
+        </div>
+
+        <div class="billing-card paid">
+          <h3>Paid in Full</h3>
+          <div class="tenant-entry">
+            <p><strong>Pauleen Crispino — Unit 14</strong></p>
+            <p>Monthly Rental Fee: ₱3500</p>
+            <p>Electric Bill: ₱1050 | Water Bill: ₱380</p>
+            <p><strong>Total Paid: ₱4930</strong></p>
+          </div>
+          <div class="tenant-entry">
+            <p><strong>Ishshah Lopez — Unit 07</strong></p>
+            <p>Monthly Rental Fee: ₱3500</p>
+            <p>Electric Bill: ₱920 | Water Bill: ₱310</p>
+            <p><strong>Total Paid: ₱4730</strong></p>
+          </div>
+        </div>
+
+        <div class="billing-card late">
+          <h3>Late Payment</h3>
+          <div class="tenant-entry">
+            <p><strong>Joaquin Bendulo — Unit 05</strong></p>
+            <p>Monthly Rental Fee: ₱3500</p>
+            <p>Electric Bill: ₱1100 | Water Bill: ₱400</p>
+            <p><strong>Total Due: ₱5000</strong></p>
+          </div>
+          <div class="tenant-entry">
+            <p><strong>Jhamez Stanley Guarico — Unit 11</strong></p>
+            <p>Monthly Rental Fee: ₱3500</p>
+            <p>Electric Bill: ₱1300 | Water Bill: ₱420</p>
+            <p><strong>Total Due: ₱5220</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-grid">
+        <div class="info-card reservations">
+          <h3>Recent Reservations</h3>
+          <p>Jhamez Stanley Guarico — Reserved Unit 18</p>
+          <p>Marvin Espina — Reserved Unit 39</p>
+        </div>
+
+        <div class="info-card available">
+          <h3>Available Units List</h3>
+          <p>Unit 01 — Vacant</p>
+          <p>Unit 03 — Vacant</p>
+          <p>Unit 07 — Vacant</p>
+          <p>Unit 19 — Vacant</p>
+          <p>Unit 25 — Vacant</p>
+        </div>
+
+        <div class="info-card ocular">
+          <h3>Ocular Schedules</h3>
+          <p>Joaquin Bendulo — Unit 12 — Sept 18, 2026</p>
+          <p>Pauleen Crispino — Unit 23 — Sept 20, 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item footer">
+      <p>© 2026 Serenity Apartment | All Rights Reserved</p>
+    </div>
+  </div>
+</body>
+</html>
