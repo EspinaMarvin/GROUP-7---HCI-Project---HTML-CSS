@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservations — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — Reservations</h2>
+      <div class="header-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026 — 12:43 PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="item sidebar">
+      <div class="sidebar-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026</span>
+        </div>
+      </div>
+      <hr class="sidebar-divider" />
+      <nav>
+        <ul>
+          <li><a href="Admin-Dashboard.html">Dashboard Overview</a></li>
+          <li><a href="Admin-Tenants.html">Tenants</a></li>
+          <li><a href="Admin-Billings.html">Billings</a></li>
+          <li><a href="Admin-Announcement.html">Announcements</a></li>
+          <li><a href="Admin-Reservation.html" style="background:#4F7C82; color:#fff;">Reservations</a></li>
+          <li><a href="Admin-Ocular.html">Ocular Schedule</a></li>
+          <li><a href="Admin-Maintenance.html">Maintenance Requests</a></li>
+          <li><a href="Admin-Helpdesk.html">Help Desk</a></li>
+        </ul>
+      </nav>
+      <hr class="sidebar-divider" />
+      <a href="logout.html" class="logout-btn">Logout</a>
+    </div>
+    <div class="item content">
+      <div class="three-card-grid" style="margin-bottom:20px;">
+        <div class="page-card">
+          <h4>Applicant: Marvin Espina</h4>
+          <p><span class="label">Contact:</span> 0917-111-2222 | john.doe@email.com</p>
+          <p><span class="label">Requested Unit:</span> Unit 01 — Studio</p>
+          <p><span class="label">Move-In Date:</span> Oct 01, 2026</p>
+          <p><span class="label">Fee Status:</span> <span class="badge paid">Reservation Fee Paid</span></p>
+          <p><span class="label">Submitted ID:</span> National ID</p>
+          <div class="btn-group">
+            <button class="btn green">Approve</button>
+            <button class="btn red">Decline</button>
+            <button class="btn blue">Contact</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Applicant: Ishshah Lopez</h4>
+          <p><span class="label">Contact:</span> 0918-222-3333 | jane.r@email.com</p>
+          <p><span class="label">Requested Unit:</span> Unit 03 — 1-Bedroom</p>
+          <p><span class="label">Move-In Date:</span> Sept 25, 2026</p>
+          <p><span class="label">Fee Status:</span> <span class="badge pending">Security Deposit Pending</span></p>
+          <p><span class="label">Submitted ID:</span> Driver's License</p>
+          <div class="btn-group">
+            <button class="btn green">Approve</button>
+            <button class="btn red">Decline</button>
+            <button class="btn blue">Contact</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Applicant: Pauleen Crispino</h4>
+          <p><span class="label">Contact:</span> 0919-333-4444 | mark.s@email.com</p>
+          <p><span class="label">Requested Unit:</span> Unit 07 — Studio</p>
+          <p><span class="label">Move-In Date:</span> Nov 01, 2026</p>
+          <p><span class="label">Fee Status:</span> <span class="badge paid">Both Fees Paid</span></p>
+          <p><span class="label">Submitted ID:</span> Passport</p>
+          <div class="btn-group">
+            <button class="btn green">Approve</button>
+            <button class="btn red">Decline</button>
+            <button class="btn blue">Contact</button>
+          </div>
+        </div>
+      </div>
+      <div class="three-card-grid">
+        <div class="page-card">
+          <h4>Applicant: Joaquin Bendulo</h4>
+          <p><span class="label">Contact:</span> 0920-444-5555 | anna.c@email.com</p>
+          <p><span class="label">Requested Unit:</span> Unit 19 — 2-Bedroom</p>
+          <p><span class="label">Move-In Date:</span> Oct 15, 2026</p>
+          <p><span class="label">Fee Status:</span> <span class="badge pending">Reservation Fee Pending</span></p>
+          <p><span class="label">Submitted ID:</span> Postal ID</p>
+          <div class="btn-group">
+            <button class="btn green">Approve</button>
+            <button class="btn red">Decline</button>
+            <button class="btn blue">Contact</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Applicant: Ysabel Lozada</h4>
+          <p><span class="label">Contact:</span> 0921-555-6666 | carlo.a@email.com</p>
+          <p><span class="label">Requested Unit:</span> Unit 25 — Studio</p>
+          <p><span class="label">Move-In Date:</span> Sept 30, 2026</p>
+          <p><span class="label">Fee Status:</span> <span class="badge paid">Fees Paid — Full</span></p>
+          <p><span class="label">Submitted ID:</span> National ID + TIN</p>
+          <div class="btn-group">
+            <button class="btn green">Approve</button>
+            <button class="btn red">Decline</button>
+            <button class="btn blue">Contact</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Applicant: Jhamez Stanley Guarico</h4>
+          <p><span class="label">Contact:</span> 0922-666-7777 | liza.m@email.com</p>
+          <p><span class="label">Requested Unit:</span> Unit 12 — 1-Bedroom</p>
+          <p><span class="label">Move-In Date:</span> Oct 05, 2026</p>
+          <p><span class="label">Fee Status:</span> <span class="badge pending">Pending Payment</span></p>
+          <p><span class="label">Submitted ID:</span> PhilHealth ID</p>
+          <div class="btn-group">
+            <button class="btn green">Approve</button>
+            <button class="btn red">Decline</button>
+            <button class="btn blue">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item footer">
+      <p>© 2026 Serenity Apartment | All Rights Reserved</p>
+    </div>
+  </div>
+</body>
+</html>
