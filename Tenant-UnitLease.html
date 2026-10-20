@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Unit & Lease — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — My Unit & Lease</h2>
+      <div class="header-profile"><img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" /><div class="profile-info"><span class="profile-name">Marvin Espina</span><span class="profile-date">Unit 16</span></div></div>
+    </div>
+    <div class="item sidebar">
+      <div class="sidebar-profile"><img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" /><div class="profile-info"><span class="profile-name">Marvin Espina</span><span class="profile-date">Unit 16</span></div></div>
+      <hr class="sidebar-divider" />
+      <nav><ul>
+        <li><a href="Tenant-Dashboard.html">Dashboard</a></li>
+        <li><a href="Tenant-UnitLease.html" style="background:#4F7C82; color:#fff;">My Unit & Lease</a></li>
+        <li><a href="Tenant-BillingReceipts.html">Billings & Receipts</a></li>
+        <li><a href="Tenant-Maintenance.html">Maintenance Requests</a></li>
+        <li><a href="Tenant-VisitorPass.html">Visitor Pass</a></li>
+        <li><a href="Tenant-Announcement.html">Announcements</a></li>
+        <li><a href="Tenant-Helpdesk.html">Help Desk</a></li>
+      </ul></nav>
+      <hr class="sidebar-divider" /><a href="Logout.html" class="logout-btn">Logout</a>
+    </div>
+    <div class="item content">
+      <div class="tenant-grid">
+        <div class="tenant-card">
+          <h3>Apartment Unit Information</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Unit Number</span><span class="value">Unit 16 — 2nd Floor</span></div>
+            <div class="info-row"><span class="label">Unit Type</span><span class="value">1-Bedroom — 30 sq.m.</span></div>
+            <div class="info-row"><span class="label">Monthly Rent</span><span class="value">₱5,200.00</span></div>
+            <div class="info-row"><span class="label">Inclusions</span><span class="value">Water — Common Area Maintenance</span></div>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Lease Agreement Overview</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Start Date</span><span class="value">Oct 01, 2025</span></div>
+            <div class="info-row"><span class="label">Expiry Date</span><span class="value expire">Sept 30, 2026</span></div>
+            <div class="info-row"><span class="label">Lease Term</span><span class="value">12 Months</span></div>
+            <div class="info-row"><span class="label">Security Deposit</span><span class="value">₱10,400.00</span></div>
+            <div class="info-row"><span class="label">Advance Payment</span><span class="value">₱5,200.00</span></div>
+            <a href="#" class="btn blue" style="text-align:center; text-decoration:none; margin-top:8px;">Download Signed Contract (PDF)</a>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Lease Actions & Rules</h3>
+          <div class="card-content">
+            <p style="font-size:0.85rem; color:#4F7C82;">Manage your lease agreement and view building guidelines.</p>
+            <div class="btn-group">
+              <button class="btn green">Request Lease Renewal</button>
+              <button class="btn red">Notice to Vacate</button>
+              <button class="btn dark">View House Rules</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Monthly Rent Breakdown</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Base Rent</span><span class="value">₱5,200.00</span></div>
+            <div class="info-row"><span class="label">Water Fee</span><span class="value">Included</span></div>
+            <div class="info-row"><span class="label">Common Area Maintenance</span><span class="value">Included</span></div>
+            <div class="info-row"><span class="label">Parking Fee</span><span class="value">None</span></div>
+            <hr style="border-color:#93B1B5; margin:6px 0;" />
+            <div class="info-row"><span class="label">Total Monthly Rent</span><span class="value"><strong>₱5,200.00</strong></span></div>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Deposit & Payment Terms</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Security Deposit</span><span class="value">Equivalent to 2 Months Rent</span></div>
+            <div class="info-row"><span class="label">Advance Payment</span><span class="value">Equivalent to 1 Month Rent</span></div>
+            <div class="info-row"><span class="label">Payment Due Date</span><span class="value due">Every 30th of the Month</span></div>
+            <div class="info-row"><span class="label">Grace Period</span><span class="value">5 Calendar Days</span></div>
+            <p style="font-size:0.8rem; color:#4F7C82; margin-top:6px;">Security deposit will be refunded 30 days after lease end, less applicable deductions.</p>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Important Dates</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Lease Renewal Deadline</span><span class="value expire">Aug 31, 2026</span></div>
+            <div class="info-row"><span class="label">Quarterly Unit Inspection</span><span class="value">Dec 15, 2026</span></div>
+            <div class="info-row"><span class="label">Move-Out Notice Period</span><span class="value">30 Days in Advance</span></div>
+            <div class="info-row"><span class="label">Lease End Date</span><span class="value expire">Sept 30, 2026</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item footer"><p>© 2026 Serenity Apartment — Tenant Portal</p></div>
+  </div>
+</body>
+</html>
