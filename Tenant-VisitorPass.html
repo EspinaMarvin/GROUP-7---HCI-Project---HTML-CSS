@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visitor Pass — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — Visitor Pass</h2>
+      <div class="header-profile"><img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" /><div class="profile-info"><span class="profile-name">Marvin Espina</span><span class="profile-date">Unit 16</span></div></div>
+    </div>
+    <div class="item sidebar">
+      <div class="sidebar-profile"><img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" /><div class="profile-info"><span class="profile-name">Marvin Espina</span><span class="profile-date">Unit 16</span></div></div>
+      <hr class="sidebar-divider" />
+      <nav><ul>
+        <li><a href="Tenant-Dashboard.html">Dashboard</a></li>
+        <li><a href="Tenant-UnitLease.html">My Unit & Lease</a></li>
+        <li><a href="Tenant-BillingReceipts.html">Billings & Receipts</a></li>
+        <li><a href="Tenant-Maintenance.html">Maintenance Requests</a></li>
+        <li><a href="Tenant-VisitorPass.html" style="background:#4F7C82; color:#fff;">Visitor Pass</a></li>
+        <li><a href="Tenant-Announcement.html">Announcements</a></li>
+        <li><a href="Tenant-Helpdesk.html">Help Desk</a></li>
+      </ul></nav>
+      <hr class="sidebar-divider" /><a href="Logout.html" class="logout-btn">Logout</a>
+    </div>
+    <div class="item content">
+      <div class="tenant-grid">
+        <div class="tenant-card request-card">
+          <h3>Pre-Register Guest</h3>
+          <div class="card-content">
+            <label class="label">Guest Full Name</label>
+            <input type="text" placeholder="e.g. John Doe" style="width:100%; padding:8px; border-radius:6px; border:1px solid #93B1B5; margin:6px 0; font-family:Lexend;" />
+            <label class="label">Contact Number</label>
+            <input type="text" placeholder="+63 9XX XXX XXXX" style="width:100%; padding:8px; border-radius:6px; border:1px solid #93B1B5; margin:6px 0; font-family:Lexend;" />
+            <label class="label">Purpose of Visit</label>
+            <select style="width:100%; padding:8px; border-radius:6px; border:1px solid #93B1B5; margin:6px 0; font-family:Lexend;">
+              <option>Personal Guest</option><option>Delivery</option><option>Service Technician</option>
+            </select>
+            <label class="label">Expected Arrival Date & Time</label>
+            <input type="date" style="width:100%; padding:8px; border-radius:6px; border:1px solid #93B1B5; margin:6px 0; font-family:Lexend;" />
+            <input type="time" style="width:100%; padding:8px; border-radius:6px; border:1px solid #93B1B5; margin:6px 0; font-family:Lexend;" />
+            <label class="label">Vehicle Plate No. (Optional)</label>
+            <input type="text" placeholder="e.g. ABC-1234" style="width:100%; padding:8px; border-radius:6px; border:1px solid #93B1B5; margin:6px 0; font-family:Lexend;" />
+            <button class="btn purple">Generate Visitor Pass</button>
+          </div>
+        </div>
+        <div class="tenant-card announce-card">
+          <h3>Active Visitor Pass</h3>
+          <div class="card-content" style="text-align:center; padding:10px;">
+            <div style="background:#fff; border-radius:8px; padding:20px; margin-bottom:12px;">
+              <div style="font-size:48px; letter-spacing:6px; font-weight:700; color:#0B2E33;">A7B-2X9</div>
+              <p style="margin-top:8px; font-size:0.85rem;">Pass Code for Lobby Security</p>
+            </div>
+            <div class="info-row"><span class="label">Guest Name</span><span class="value">John Doe</span></div>
+            <div class="info-row"><span class="label">Validity</span><span class="value due">Sept 16, 2026 Only</span></div>
+            <div class="info-row"><span class="label">Arrival Window</span><span class="value">8:00 AM — 9:00 PM</span></div>
+          </div>
+        </div>
+        <div class="tenant-card trans-card">
+          <h3>Visitor Access Log</h3>
+          <div class="trans-item">
+            <span class="trans-date">Sept 14, 2026 — 2:15 PM</span>
+            <span class="trans-desc">Joaquin Bendulo — Personal Visit</span>
+            <span class="trans-status">Checked Out: 5:40 PM</span>
+          </div>
+          <div class="trans-item">
+            <span class="trans-date">Sept 10, 2026 — 10:30 AM</span>
+            <span class="trans-desc">Lazada Delivery — Package</span>
+            <span class="trans-status">Delivered</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item footer"><p>© 2026 Serenity Apartment — Tenant Portal</p></div>
+  </div>
+</body>
+</html>
