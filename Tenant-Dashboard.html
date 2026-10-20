@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tenant Dashboard — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — My Dashboard</h2>
+      <div class="header-profile">
+        <img src="admin-profile.png" alt="Tenant Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Tenant Account</span>
+          <span class="profile-date">Unit 16 | Sept 15, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item sidebar">
+      <div class="sidebar-profile">
+        <img src="admin-profile.png" alt="Tenant Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Tenant Account</span>
+          <span class="profile-date">Unit 16</span>
+        </div>
+      </div>
+      <hr class="sidebar-divider" />
+      <nav>
+        <ul>
+          <li><a href="Tenant-Dashboard.html" style="background:#4F7C82; color:#fff;">Dashboard</a></li>
+          <li><a href="Tenant-UnitLease.html">My Unit & Lease</a></li>
+          <li><a href="Tenant-BillingReceipts.html">Billings & Receipts</a></li>
+          <li><a href="Tenant-Maintenance.html">Maintenance Requests</a></li>
+          <li><a href="Tenant-VisitorPass.html">Visitor Pass</a></li>
+          <li><a href="Tenant-Announcement.html">Announcements</a></li>
+          <li><a href="Tenant-Helpdesk.html">Help Desk</a></li>
+        </ul>
+      </nav>
+      <hr class="sidebar-divider" />
+      <a href="Logout.html" class="logout-btn">Logout</a>
+    </div>
+
+    <div class="item content">
+      <div class="tenant-grid">
+
+        <!-- TOP ROW — 3 Original Cards -->
+        <div class="tenant-card">
+          <h3>Quick Rent Summary</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Current Balance</span><span class="value balance">₱5,830.00</span></div>
+            <div class="info-row"><span class="label">Next Due Date</span><span class="value due">Sept 30, 2026</span></div>
+            <div class="info-row"><span class="label">Payment Status</span><span class="badge pending">Pending</span></div>
+            <p style="font-size:0.85rem; color:#4F7C82; margin-top:6px;">Includes: Rent ₱5,200 + Water ₱180 + Electricity ₱450</p>
+            <button class="pay-btn">Pay Now</button>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Lease Quick-View</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Apartment Unit</span><span class="value">Unit 16 — 2nd Floor</span></div>
+            <div class="info-row"><span class="label">Move-In Date</span><span class="value">Oct 01, 2025</span></div>
+            <div class="info-row"><span class="label">Lease Expires</span><span class="value expire">352 Days Remaining</span></div>
+            <p style="font-size:0.85rem; color:#4F7C82; margin-top:6px;">Lease term: 12 months. Renewal due: Sept 2026.</p>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Building Announcements</h3>
+          <div class="card-content">
+            <div class="alert-item" style="background:rgba(229,57,53,0.08); border-left:3px solid #e53935;">
+              <strong>Scheduled Water Outage</strong>
+              <p>Sept 22, 2026 — 1:00 PM to 3:00 PM — Maintenance Advisory</p>
+            </div>
+            <div class="alert-item" style="background:rgba(249,168,37,0.08); border-left:3px solid #f9a825; margin-top:8px;">
+              <strong>Elevator Maintenance</strong>
+              <p>Sept 20, 2026 — 9:00 AM to 4:00 PM — Use stairs temporarily</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW MIDDLE ROW — 3 Cards Added -->
+        <div class="tenant-card">
+          <h3>Active Maintenance Tracker</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Issue Summary</span><span class="value">Leaking Kitchen Faucet</span></div>
+            <div class="info-row"><span class="label">Ticket ID & Category</span><span class="value">#MNT-104 — Plumbing</span></div>
+            <div class="info-row"><span class="label">Current Status</span><span class="req-status in-progress">In Progress — Scheduled for Today</span></div>
+            <div class="info-row"><span class="label">Assigned Personnel</span><span class="value">Carlo — Est. Arrival: 2:00 PM</span></div>
+            <button class="btn blue" style="margin-top:10px;" onclick="location.href='Tenant-Maintenance.html'">View Repair Details</button>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Visitor Pass Quick Status</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Upcoming Guest Name</span><span class="value">Juan Dela Cruz</span></div>
+            <div class="info-row"><span class="label">Scheduled Visit</span><span class="value">Sept 16, 2026 — 2:00 PM</span></div>
+            <div class="info-row"><span class="label">Pass Status</span><span class="req-status approved">Approved — QR Code Ready</span></div>
+            <div style="display:flex; gap:8px; margin-top:10px;">
+              <button class="btn green" style="flex:1;">Show QR Code</button>
+              <button class="btn red" style="flex:1;">Cancel Pass</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Support & Emergency Contacts</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Admin Office Line</span><span class="value">+63 912 345 6789</span></div>
+            <div class="info-row"><span class="label">Security Desk</span><span class="value">(02) 8123-4567 — 24/7</span></div>
+            <div class="info-row"><span class="label">Emergency Hotline</span><span class="value" style="color:#e53935;">911 — Fire / Police / Medical</span></div>
+            <button class="btn blue" style="margin-top:10px;" onclick="location.href='Tenant-Helpdesk.html'">Message Support</button>
+          </div>
+        </div>
+
+        <!-- BOTTOM ROW — Transaction History (Full Width) -->
+        <div class="tenant-card full-width">
+          <h3>Recent Transaction History</h3>
+          <div class="card-content">
+            <p style="font-size:0.85rem; color:#4F7C82;">Your last 2 verified payments. Visit Billings & Receipts for full history.</p>
+            <div class="trans-item">
+              <span class="trans-date">Sept 01, 2026</span>
+              <span class="trans-desc">Rent Payment — ₱5,830.00</span>
+              <span class="trans-status">Paid in Full — GCash — Verified</span>
+            </div>
+            <div class="trans-item">
+              <span class="trans-date">Aug 01, 2026</span>
+              <span class="trans-desc">Rent Payment — ₱5,800.00</span>
+              <span class="trans-status">Paid in Full — Bank Transfer — Verified</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="item footer"><p>© 2026 Serenity Apartment — Tenant Portal</p></div>
+  </div>
+</body>
+</html>
