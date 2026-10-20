@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tenants — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — Tenants</h2>
+      <div class="header-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026 — 12:43 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item sidebar">
+      <div class="sidebar-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026</span>
+        </div>
+      </div>
+      <hr class="sidebar-divider" />
+      <nav>
+        <ul>
+          <li><a href="Admin-Dashboard.html">Dashboard Overview</a></li>
+          <li><a href="Admin-Tenants.html" style="background:#4F7C82; color:#fff;">Tenants</a></li>
+          <li><a href="Admin-Billings.html">Billings</a></li>
+          <li><a href="Admin-Announcement.html">Announcements</a></li>
+          <li><a href="Admin-Reservation.html">Reservations</a></li>
+          <li><a href="Admin-Ocular.html">Ocular Schedule</a></li>
+          <li><a href="Admin-Maintenance.html">Maintenance Requests</a></li>
+          <li><a href="Admin-Helpdesk.html">Help Desk</a></li>
+        </ul>
+      </nav>
+      <hr class="sidebar-divider" />
+      <a href="logout.html" class="logout-btn">Logout</a>
+    </div>
+
+    <div class="item content">
+      <!- SINGLE SEARCH BAR -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search by Tenant Name or Unit Number..." />
+        <button>Search</button>
+      </div>
+
+      <!-- TOP ROW: 3 Cards -->
+      <div class="three-card-grid" style="margin-bottom:20px;">
+        <div class="page-card">
+          <div class="card-profile">
+            <!-- Marvin Espina -->
+            <img src="marvin-espina.png" alt="Marvin D. Espina" class="tenant-photo" />
+            <div><strong>Marvin D. Espina</strong></div>
+          </div>
+          <p><span class="label">Unit:</span> Unit 19</p>
+          <p><span class="label">Contact:</span> 0917-123-4567</p>
+          <p><span class="label">Email:</span> marvin.espina019@gmail.com</p>
+          <p><span class="label">Occupation:</span> Business Owner</p>
+          <p><span class="label">ID Submitted:</span> Driver's License, National ID</p>
+          <p><span class="label">Move-In:</span> March 29, 2018</p>
+          <p><span class="label">Lease End:</span> March 29, 2027</p>
+          <p><span class="label">Contract:</span> <a href="#">Download PDF</a></p>
+        </div>
+
+        <div class="page-card">
+          <div class="card-profile">
+            <!-- Joaquin Bendulo -->
+            <img src="joaquin-bendulo.png" alt="Joaquin Bendulo" class="tenant-photo" />
+            <div><strong>Joaquin Bendulo</strong></div>
+          </div>
+          <p><span class="label">Unit:</span> Unit 05</p>
+          <p><span class="label">Contact:</span> 0918-234-5678</p>
+          <p><span class="label">Email:</span> joaquin.bendulo@email.com</p>
+          <p><span class="label">Occupation:</span> Engineer</p>
+          <p><span class="label">ID Submitted:</span> Passport, National ID</p>
+          <p><span class="label">Move-In:</span> June 10, 2022</p>
+          <p><span class="label">Lease End:</span> June 10, 2027</p>
+          <p><span class="label">Contract:</span> <a href="#">Download PDF</a></p>
+        </div>
+
+        <div class="page-card">
+          <div class="card-profile">
+            <!-- Pauleen Crispino -->
+            <img src="pauleen-crispino.png" alt="Pauleen Crispino" class="tenant-photo" />
+            <div><strong>Pauleen Crispino</strong></div>
+          </div>
+          <p><span class="label">Unit:</span> Unit 14</p>
+          <p><span class="label">Contact:</span> 0919-345-6789</p>
+          <p><span class="label">Email:</span> pauleen.crispino@email.com</p>
+          <p><span class="label">Occupation:</span> Teacher</p>
+          <p><span class="label">ID Submitted:</span> PRC ID, National ID</p>
+          <p><span class="label">Move-In:</span> Sept 01, 2023</p>
+          <p><span class="label">Lease End:</span> Sept 01, 2026</p>
+          <p><span class="label">Contract:</span> <a href="#">Download PDF</a></p>
+        </div>
+      </div>
+
+      <!-- BOTTOM ROW: 3 Cards -->
+      <div class="three-card-grid">
+        <div class="page-card">
+          <div class="card-profile">
+            <!-- Ishshah Lopez -->
+            <img src="ishshah-lopez.png" alt="Ishshah Lopez" class="tenant-photo" />
+            <div><strong>Ishshah Lopez</strong></div>
+          </div>
+          <p><span class="label">Unit:</span> Unit 07</p>
+          <p><span class="label">Contact:</span> 0920-456-7890</p>
+          <p><span class="label">Email:</span> ishshah.lopez@email.com</p>
+          <p><span class="label">Occupation:</span> Nurse</p>
+          <p><span class="label">ID Submitted:</span> National ID, PhilHealth ID</p>
+          <p><span class="label">Move-In:</span> Jan 15, 2024</p>
+          <p><span class="label">Lease End:</span> Jan 15, 2027</p>
+          <p><span class="label">Contract:</span> <a href="#">Download PDF</a></p>
+        </div>
+
+        <div class="page-card">
+          <div class="card-profile">
+            <!-- Ysabel Lozada -->
+            <img src="ysabel-lozada.png" alt="Ysabel Lozada" class="tenant-photo" />
+            <div><strong>Ysabel Lozada</strong></div>
+          </div>
+          <p><span class="label">Unit:</span> Unit 22</p>
+          <p><span class="label">Contact:</span> 0921-567-8901</p>
+          <p><span class="label">Email:</span> ysabel.lozada@email.com</p>
+          <p><span class="label">Occupation:</span> Accountant</p>
+          <p><span class="label">ID Submitted:</span> TIN ID, National ID</p>
+          <p><span class="label">Move-In:</span> Feb 20, 2023</p>
+          <p><span class="label">Lease End:</span> Feb 20, 2026</p>
+          <p><span class="label">Contract:</span> <a href="#">Download PDF</a></p>
+        </div>
+
+        <div class="page-card">
+          <div class="card-profile">
+            <!-- Jhamez Stanley Guarico -->
+            <img src="jhamez-stanley-guarico.png" alt="Jhamez Stanley Guarico" class="tenant-photo" />
+            <div><strong>Jhamez Stanley Guarico</strong></div>
+          </div>
+          <p><span class="label">Unit:</span> Unit 11</p>
+          <p><span class="label">Contact:</span> 0922-678-9012</p>
+          <p><span class="label">Email:</span> jhamez.guarico@email.com</p>
+          <p><span class="label">Occupation:</span> IT Specialist</p>
+          <p><span class="label">ID Submitted:</span> Postal ID, National ID</p>
+          <p><span class="label">Move-In:</span> April 05, 2022</p>
+          <p><span class="label">Lease End:</span> April 05, 2027</p>
+          <p><span class="label">Contract:</span> <a href="#">Download PDF</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item footer">
+      <p>© 2026 Serenity Apartment | All Rights Reserved</p>
+    </div>
+  </div>
+</body>
+</html>
