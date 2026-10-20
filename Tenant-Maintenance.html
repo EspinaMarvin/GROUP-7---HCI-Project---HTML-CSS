@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maintenance Requests — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — Maintenance Requests</h2>
+      <div class="header-profile"><img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" /><div class="profile-info"><span class="profile-name">Marvin Espina</span><span class="profile-date">Unit 16</span></div></div>
+    </div>
+    <div class="item sidebar">
+      <div class="sidebar-profile"><img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" /><div class="profile-info"><span class="profile-name">Marvin Espina</span><span class="profile-date">Unit 16</span></div></div>
+      <hr class="sidebar-divider" />
+      <nav><ul>
+        <li><a href="Tenant-Dashboard.html">Dashboard</a></li>
+        <li><a href="Tenant-UnitLease.html">My Unit & Lease</a></li>
+        <li><a href="Tenant-BillingReceipts.html">Billings & Receipts</a></li>
+        <li><a href="Tenant-Maintenance.html" style="background:#4F7C82; color:#fff;">Maintenance Requests</a></li>
+        <li><a href="Tenant-VisitorPass.html">Visitor Pass</a></li>
+        <li><a href="Tenant-Announcement.html">Announcements</a></li>
+        <li><a href="Tenant-Helpdesk.html">Help Desk</a></li>
+      </ul></nav>
+      <hr class="sidebar-divider" /><a href="Logout.html" class="logout-btn">Logout</a>
+    </div>
+    <div class="item content">
+      <div class="tenant-grid">
+        <div class="tenant-card">
+          <h3>Submit New Maintenance Request</h3>
+          <div class="card-content">
+            <label class="label">Issue Category</label>
+            <select>
+              <option>Plumbing</option>
+              <option>Electrical</option>
+              <option>Air Conditioner and Appliance</option>
+              <option>Structural</option>
+            </select>
+            <label class="label">Urgency Level</label>
+            <select>
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High or Emergency</option>
+            </select>
+            <label class="label">Description of Issue</label>
+            <textarea placeholder="Describe the problem in detail..."></textarea>
+            <label class="label">Attach Photo of Damaged Area</label>
+            <input type="file" />
+            <label class="label">Preferred Inspection Time</label>
+            <select>
+              <option>Weekday Morning — 8:00 AM to 12:00 PM</option>
+              <option>Weekday Afternoon — 1:00 PM to 5:00 PM</option>
+              <option>Saturday Morning</option>
+            </select>
+            <button class="btn red">Submit Repair Ticket</button>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>My Request History</h3>
+          <div class="card-content">
+            <div class="req-item">
+              <span class="req-title">Ticket #MNT-104 — Leaking Faucet</span>
+              <span class="req-status in-progress">Status: In Progress</span>
+              <span class="req-date">Submitted: Sept 12, 2026 — Scheduled: Sept 16</span>
+              <span style="font-size:0.82rem; color:#4F7C82;">Assigned to Maintenance Staff: Carlo</span>
+            </div>
+            <div class="req-item">
+              <span class="req-title">Ticket #MNT-098 — Light Bulb Replacement</span>
+              <span class="req-status approved">Status: Resolved</span>
+              <span class="req-date">Submitted: Aug 30, 2026 — Completed: Sept 02</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Maintenance Guidelines</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Response Time — Low Priority</span><span class="value">3 to 5 Working Days</span></div>
+            <div class="info-row"><span class="label">Response Time — Medium Priority</span><span class="value">1 to 2 Working Days</span></div>
+            <div class="info-row"><span class="label">Emergency Hotline</span><span class="value" style="color:#e53935;">0912-XXX-XXXX</span></div>
+            <p style="font-size:0.85rem; color:#4F7C82; margin-top:8px;">Please attach a clear photograph to speed up processing. Maintenance service hours are Monday through Saturday, 8:00 AM to 5:00 PM.</p>
+            <p style="font-size:0.85rem; color:#4F7C82;">You will be notified via SMS when maintenance staff is en route to your unit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item footer"><p>© 2026 Serenity Apartment — Tenant Portal</p></div>
+  </div>
+</body>
+</html>
