@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help Desk — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — Help Desk and Support</h2>
+      <div class="header-profile">
+        <img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Marvin Espina</span>
+          <span class="profile-date">Unit 16</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item sidebar">
+      <div class="sidebar-profile">
+        <img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Marvin Espina</span>
+          <span class="profile-date">Unit 16</span>
+        </div>
+      </div>
+      <hr class="sidebar-divider" />
+      <nav>
+        <ul>
+          <li><a href="Tenant-Dashboard.html">Dashboard</a></li>
+          <li><a href="Tenant-UnitLease.html">My Unit & Lease</a></li>
+          <li><a href="Tenant-BillingReceipts.html">Billings & Receipts</a></li>
+          <li><a href="Tenant-Maintenance.html">Maintenance Requests</a></li>
+          <li><a href="Tenant-VisitorPass.html">Visitor Pass</a></li>
+          <li><a href="Tenant-Announcement.html">Announcements</a></li>
+          <li><a href="Tenant-Helpdesk.html" style="background:#4F7C82; color:#fff;">Help Desk</a></li>
+        </ul>
+      </nav>
+      <hr class="sidebar-divider" />
+      <a href="Logout.html" class="logout-btn">Logout</a>
+    </div>
+
+    <div class="item content">
+      <div class="tenant-grid">
+
+        <!-- CARD 1: Submit Support Ticket -->
+        <div class="tenant-card">
+          <h3>Submit Support Ticket</h3>
+          <div class="card-content">
+            <label class="label">Ticket Category</label>
+            <select>
+              <option>Billing Concern</option>
+              <option>Lease and Contract Inquiry</option>
+              <option>Noise or Disturbance Report</option>
+              <option>Security and Safety Concern</option>
+              <option>General Inquiry</option>
+            </select>
+            <label class="label">Subject</label>
+            <input type="text" placeholder="Brief summary of your concern" />
+            <label class="label">Detailed Message</label>
+            <textarea placeholder="Describe your concern in detail..."></textarea>
+            <label class="label">Attach Supporting Document</label>
+            <input type="file" />
+            <button class="btn blue">Submit Ticket</button>
+          </div>
+        </div>
+
+        <!-- CARD 2: My Support Tickets -->
+        <div class="tenant-card">
+          <h3>My Support Tickets</h3>
+          <div class="card-content">
+            <div class="req-item">
+              <span class="req-title">Ticket #HD-2026-041 — Billing Inquiry</span>
+              <span class="req-status in-progress">Status: In Progress</span>
+              <span class="req-date">Submitted: Sept 10, 2026 — Expected Response: Sept 17</span>
+            </div>
+            <div class="req-item">
+              <span class="req-title">Ticket #HD-2026-038 — Lease Renewal Question</span>
+              <span class="req-status approved">Status: Resolved</span>
+              <span class="req-date">Submitted: Sept 05, 2026 — Closed: Sept 08</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: Contact Information (Beside My Tickets) -->
+        <div class="tenant-card">
+          <h3>Direct Contact Information</h3>
+          <div class="card-content">
+            <div class="contact-item">
+              <span class="contact-label">Property Manager</span>
+              <span class="contact-value">+63 912 345 6789</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Office Telephone</span>
+              <span class="contact-value">(02) 8123-4567</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Email Address</span>
+              <span class="contact-value">support@serenityapartment.ph</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Office Hours</span>
+              <span class="contact-value">Mon–Sat, 8:00 AM – 5:00 PM</span>
+            </div>
+            <p style="font-size:0.85rem; color:#4F7C82; margin-top:8px;">
+              We respond to tickets within 3 to 5 working days. For emergencies, please call the hotline directly.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 4: Frequently Asked Questions (Full-Width — Bottom) -->
+        <div class="tenant-card full-width">
+          <h3>Frequently Asked Questions</h3>
+          <div class="card-content">
+            <div class="info-row">
+              <span class="label">When is rent due?</span>
+              <span class="value">Every 30th of the month</span>
+            </div>
+            <div class="info-row">
+              <span class="label">How do I update my contact details?</span>
+              <span class="value">Submit a ticket or visit the admin office</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Can I renew my lease online?</span>
+              <span class="value">Yes — go to My Unit & Lease page</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Where can I view payment receipts?</span>
+              <span class="value">Go to Billings & Receipts page</span>
+            </div>
+            <div class="info-row">
+              <span class="label">How do I report maintenance issues?</span>
+              <span class="value">Submit request via Maintenance Requests page</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="item footer">
+      <p>© 2026 Serenity Apartment — Tenant Portal</p>
+    </div>
+  </div>
+</body>
+</html>
