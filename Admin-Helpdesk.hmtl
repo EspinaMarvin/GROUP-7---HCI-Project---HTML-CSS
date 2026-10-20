@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help Desk — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — Help Desk</h2>
+      <div class="header-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026 — 12:48 PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="item sidebar">
+      <div class="sidebar-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026</span>
+        </div>
+      </div>
+      <hr class="sidebar-divider" />
+      <nav>
+        <ul>
+          <li><a href="Admin-Dashboard.html">Dashboard Overview</a></li>
+          <li><a href="Admin-Tenants.html">Tenants</a></li>
+          <li><a href="Admin-Billings.html">Billings</a></li>
+          <li><a href="Admin-Announcement.html">Announcements</a></li>
+          <li><a href="Admin-Reservation.html">Reservations</a></li>
+          <li><a href="Admin-Ocular.html">Ocular Schedule</a></li>
+          <li><a href="Admin-Maintenance.html">Maintenance Requests</a></li>
+          <li><a href="Admin-Helpdesk.html" style="background:#4F7C82; color:#fff;">Help Desk</a></li>
+        </ul>
+      </nav>
+      <hr class="sidebar-divider" />
+      <a href="logout.html" class="logout-btn">Logout</a>
+    </div>
+    <div class="item content">
+      <!-- TOP ROW: 3 Cards -->
+      <div class="three-card-grid" style="margin-bottom:20px;">
+        <div class="page-card">
+          <h4>Marvin Espina — Unit 19</h4>
+          <p><span class="label">Subject:</span> Noise Complaint</p>
+          <p><span class="label">Date:</span> Sept 14, 2026</p>
+          <p><span class="label">Message:</span> Excessive noise from Unit 20 every night past 10:00 PM. Requesting immediate assistance.</p>
+          <hr style="margin:10px 0; border-color:#93B1B5;">
+          <p><span class="label">Reply:</span> <textarea style="width:100%; padding:8px; border-radius:6px; border:none; margin-top:4px;" placeholder="Type reply here..."></textarea></p>
+          <p><span class="label">Attach File:</span> <input type="file" style="margin-top:4px; font-size:0.85rem;"></p>
+          <div class="btn-group">
+            <button class="btn blue">Send Reply</button>
+            <button class="btn green">Mark Resolved</button>
+            <button class="btn red">Escalate</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Pauleen Crispino — Unit 14</h4>
+          <p><span class="label">Subject:</span> Parking Space Inquiry</p>
+          <p><span class="label">Date:</span> Sept 13, 2026</p>
+          <p><span class="label">Message:</span> Requesting information regarding available parking slots and monthly fees for tenants.</p>
+          <hr style="margin:10px 0; border-color:#93B1B5;">
+          <p><span class="label">Reply:</span> <textarea style="width:100%; padding:8px; border-radius:6px; border:none; margin-top:4px;" placeholder="Type reply here..."></textarea></p>
+          <p><span class="label">Attach File:</span> <input type="file" style="margin-top:4px; font-size:0.85rem;"></p>
+          <div class="btn-group">
+            <button class="btn blue">Send Reply</button>
+            <button class="btn green">Mark Resolved</button>
+            <button class="btn red">Escalate</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Joaquin Bendulo — Unit 05</h4>
+          <p><span class="label">Subject:</span> Water Bill Dispute</p>
+          <p><span class="label">Date:</span> Sept 12, 2026</p>
+          <p><span class="label">Message:</span> Water bill seems unusually high. Requesting meter reading and detailed computation.</p>
+          <hr style="margin:10px 0; border-color:#93B1B5;">
+          <p><span class="label">Reply:</span> <textarea style="width:100%; padding:8px; border-radius:6px; border:none; margin-top:4px;" placeholder="Type reply here..."></textarea></p>
+          <p><span class="label">Attach File:</span> <input type="file" style="margin-top:4px; font-size:0.85rem;"></p>
+          <div class="btn-group">
+            <button class="btn blue">Send Reply</button>
+            <button class="btn green">Mark Resolved</button>
+            <button class="btn red">Escalate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM ROW: 3 Cards -->
+      <div class="three-card-grid">
+        <div class="page-card">
+          <h4>Ishshah Lopez — Unit 07</h4>
+          <p><span class="label">Subject:</span> Lease Renewal Questions</p>
+          <p><span class="label">Date:</span> Sept 11, 2026</p>
+          <p><span class="label">Message:</span> Inquiring about lease renewal terms and possible rent adjustment upon renewal.</p>
+          <hr style="margin:10px 0; border-color:#93B1B5;">
+          <p><span class="label">Reply:</span> <textarea style="width:100%; padding:8px; border-radius:6px; border:none; margin-top:4px;" placeholder="Type reply here..."></textarea></p>
+          <p><span class="label">Attach File:</span> <input type="file" style="margin-top:4px; font-size:0.85rem;"></p>
+          <div class="btn-group">
+            <button class="btn blue">Send Reply</button>
+            <button class="btn green">Mark Resolved</button>
+            <button class="btn red">Escalate</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Ysabel Lozada — Unit 22</h4>
+          <p><span class="label">Subject:</span> Gate Access Card Issue</p>
+          <p><span class="label">Date:</span> Sept 10, 2026</p>
+          <p><span class="label">Message:</span> Access card not working at main gate. Requesting replacement or repair.</p>
+          <hr style="margin:10px 0; border-color:#93B1B5;">
+          <p><span class="label">Reply:</span> <textarea style="width:100%; padding:8px; border-radius:6px; border:none; margin-top:4px;" placeholder="Type reply here..."></textarea></p>
+          <p><span class="label">Attach File:</span> <input type="file" style="margin-top:4px; font-size:0.85rem;"></p>
+          <div class="btn-group">
+            <button class="btn blue">Send Reply</button>
+            <button class="btn green">Mark Resolved</button>
+            <button class="btn red">Escalate</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Jhamez Guarico — Unit 11</h4>
+          <p><span class="label">Subject:</span> Building Rule Clarification</p>
+          <p><span class="label">Date:</span> Sept 09, 2026</p>
+          <p><span class="label">Message:</span> Requesting clarification on pet policy and guest visiting hours rules.</p>
+          <hr style="margin:10px 0; border-color:#93B1B5;">
+          <p><span class="label">Reply:</span> <textarea style="width:100%; padding:8px; border-radius:6px; border:none; margin-top:4px;" placeholder="Type reply here..."></textarea></p>
+          <p><span class="label">Attach File:</span> <input type="file" style="margin-top:4px; font-size:0.85rem;"></p>
+          <div class="btn-group">
+            <button class="btn blue">Send Reply</button>
+            <button class="btn green">Mark Resolved</button>
+            <button class="btn red">Escalate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item footer">
+      <p>© 2026 Serenity Apartment | All Rights Reserved</p>
+    </div>
+  </div>
+</body>
+</html>
