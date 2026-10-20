@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Announcements — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — Announcements & Guidelines</h2>
+      <div class="header-profile"><img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" /><div class="profile-info"><span class="profile-name">Marvin Espina</span><span class="profile-date">Unit 16</span></div></div>
+    </div>
+    <div class="item sidebar">
+      <div class="sidebar-profile"><img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" /><div class="profile-info"><span class="profile-name">Marvin Espina</span><span class="profile-date">Unit 16</span></div></div>
+      <hr class="sidebar-divider" />
+      <nav><ul>
+        <li><a href="Tenant-Dashboard.html">Dashboard</a></li>
+        <li><a href="Tenant-UnitLease.html">My Unit & Lease</a></li>
+        <li><a href="Tenant-BillingReceipts.html">Billings & Receipts</a></li>
+        <li><a href="Tenant-Maintenance.html">Maintenance Requests</a></li>
+        <li><a href="Tenant-VisitorPass.html">Visitor Pass</a></li>
+        <li><a href="Tenant-Announcement.html" style="background:#4F7C82; color:#fff;">Announcements</a></li>
+        <li><a href="Tenant-Helpdesk.html">Help Desk</a></li>
+      </ul></nav>
+      <hr class="sidebar-divider" /><a href="Logout.html" class="logout-btn">Logout</a>
+    </div>
+    <div class="item content">
+      <div class="tenant-grid">
+        <div class="tenant-card">
+          <h3>Important Notices</h3>
+          <div class="alert-item" style="background:rgba(229,57,53,0.08); border-left:3px solid #e53935;">
+            <strong>Water Supply Interruption</strong>
+            <p>Sept 22, 2026 — 1:00 PM to 3:00 PM — Pipe replacement work. Please store water in advance.</p>
+          </div>
+          <div class="alert-item" style="background:rgba(249,168,37,0.08); border-left:3px solid #f9a825; margin-top:8px;">
+            <strong>Elevator Maintenance</strong>
+            <p>Sept 20, 2026 — 9:00 AM to 4:00 PM — Elevator will be unavailable. Use stairs temporarily.</p>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Building Guidelines</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Garbage Collection Schedule</span><span class="value">Monday and Thursday — 7:00 AM to 9:00 AM</span></div>
+            <div class="info-row"><span class="label">Quiet Hours</span><span class="value">10:00 PM to 6:00 AM</span></div>
+            <div class="info-row"><span class="label">Gym Operating Hours</span><span class="value">6:00 AM to 9:00 PM</span></div>
+            <div class="info-row"><span class="label">Laundry Area Usage</span><span class="value">7:00 AM to 10:00 PM</span></div>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Emergency Contacts</h3>
+          <div class="card-content">
+            <div class="contact-item"><span class="contact-label">Property Manager</span><span class="contact-value">+63 912 345 6789</span></div>
+            <div class="contact-item"><span class="contact-label">Security Guard Desk</span><span class="contact-value">(02) 8123-4567</span></div>
+            <div class="contact-item"><span class="contact-label">Police, Fire, Medical Emergency</span><span class="contact-value">911</span></div>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Upcoming Building Events</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">General Unit Cleaning</span><span class="value">Last Saturday of Each Month</span></div>
+            <div class="info-row"><span class="label">Fire and Safety Drill</span><span class="value">Oct 05, 2026 — 9:00 AM</span></div>
+            <div class="info-row"><span class="label">Quarterly Unit Inspection</span><span class="value">Dec 15, 2026</span></div>
+            <div class="info-row"><span class="label">Year-End Holiday Schedule</span><span class="value">Dec 20, 2026 to Jan 02, 2027</span></div>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Waste Management and Recycling</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Biodegradable Waste</span><span class="value">Green Bin — Daily Collection</span></div>
+            <div class="info-row"><span class="label">Non-Biodegradable Waste</span><span class="value">Black Bin — Monday and Thursday</span></div>
+            <div class="info-row"><span class="label">Recyclable Materials</span><span class="value">Blue Bin — Saturdays Only</span></div>
+            <div class="info-row"><span class="label">Prohibited Items</span><span class="value">Hazardous Materials and Chemicals</span></div>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Amenities Information</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Roofdeck Access</span><span class="value">6:00 AM to 10:00 PM — Free Usage</span></div>
+            <div class="info-row"><span class="label">Function Room</span><span class="value">By Reservation Only</span></div>
+            <div class="info-row"><span class="label">Visitor Parking</span><span class="value">Basement 1 — Limited Slots</span></div>
+            <div class="info-row"><span class="label">Package Delivery Service</span><span class="value">Front Desk — 8:00 AM to 8:00 PM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item footer"><p>© 2026 Serenity Apartment — Tenant Portal</p></div>
+  </div>
+</body>
+</html>
