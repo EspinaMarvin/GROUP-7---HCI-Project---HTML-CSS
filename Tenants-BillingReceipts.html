@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Billings & Receipts — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — Billings & Receipts</h2>
+      <div class="header-profile"><img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" /><div class="profile-info"><span class="profile-name">Marvin Espina</span><span class="profile-date">Unit 16</span></div></div>
+    </div>
+    <div class="item sidebar">
+      <div class="sidebar-profile"><img src="tenant-profile.png" alt="Tenant Profile" class="profile-pic" /><div class="profile-info"><span class="profile-name">Marvin Espina</span><span class="profile-date">Unit 16</span></div></div>
+      <hr class="sidebar-divider" />
+      <nav><ul>
+        <li><a href="Tenant-Dashboard.html">Dashboard</a></li>
+        <li><a href="Tenant-UnitLease.html">My Unit & Lease</a></li>
+        <li><a href="Tenant-BillingReceipts.html" style="background:#4F7C82; color:#fff;">Billings & Receipts</a></li>
+        <li><a href="Tenant-Maintenance.html">Maintenance Requests</a></li>
+        <li><a href="Tenant-VisitorPass.html">Visitor Pass</a></li>
+        <li><a href="Tenant-Announcement.html">Announcements</a></li>
+        <li><a href="Tenant-Helpdesk.html">Help Desk</a></li>
+      </ul></nav>
+      <hr class="sidebar-divider" /><a href="Logout.html" class="logout-btn">Logout</a>
+    </div>
+    <div class="item content">
+      <div class="tenant-grid">
+        <div class="tenant-card">
+          <h3>Statement of Account — September 2026</h3>
+          <div class="card-content">
+            <div class="info-row"><span class="label">Base Rent</span><span class="value">₱5,200.00</span></div>
+            <div class="info-row"><span class="label">Water Fee</span><span class="value">₱180.00</span></div>
+            <div class="info-row"><span class="label">Electricity Fee</span><span class="value">₱450.00</span></div>
+            <div class="info-row"><span class="label">Parking Fee</span><span class="value">₱0.00</span></div>
+            <hr style="border-color:#93B1B5; margin:6px 0;" />
+            <div class="info-row"><span class="label">Total Amount Due</span><span class="value balance">₱5,830.00</span></div>
+            <div class="info-row"><span class="label">Due Date</span><span class="value due">Sept 30, 2026</span></div>
+            <span class="badge pending">Pending</span>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Upload Proof of Payment</h3>
+          <div class="card-content">
+            <label class="label">Payment Method</label>
+            <select>
+              <option>GCash</option>
+              <option>Bank Transfer</option>
+              <option>Over-the-Counter</option>
+            </select>
+            <label class="label">Transaction Reference Number</label>
+            <input type="text" placeholder="e.g. GC-2026-0915-001" />
+            <label class="label">Attach Receipt or Screenshot</label>
+            <input type="file" />
+            <button class="btn green">Submit for Verification</button>
+          </div>
+        </div>
+
+        <div class="tenant-card">
+          <h3>Payment Instructions</h3>
+          <div class="card-content">
+            <p style="font-size:0.85rem; color:#4F7C82; margin-bottom:8px;">Please use your Unit Number as payment reference.</p>
+            <div class="info-row"><span class="label">GCash Number</span><span class="value">0912-345-6789</span></div>
+            <div class="info-row"><span class="label">Account Name</span><span class="value">Serenity Apartment</span></div>
+            <div class="info-row"><span class="label">BDO Account Number</span><span class="value">1234-5678-90</span></div>
+            <div class="info-row"><span class="label">Reference Format</span><span class="value">Unit16-Sept2026</span></div>
+            <p style="font-size:0.8rem; color:#e53935; margin-top:8px;">Always upload proof of payment to avoid verification delays.</p>
+          </div>
+        </div>
+
+        <div class="tenant-card full-width">
+          <h3>Payment History & Receipts</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Billing Period</th>
+                <th>Amount Paid</th>
+                <th>Date Paid</th>
+                <th>Payment Method</th>
+                <th>Verification Status</th>
+                <th>Official Receipt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>August 2026</td>
+                <td>₱5,830.00</td>
+                <td>Aug 29, 2026</td>
+                <td>GCash</td>
+                <td><span class="badge paid">Verified</span></td>
+                <td><a href="#">Download PDF</a></td>
+              </tr>
+              <tr>
+                <td>July 2026</td>
+                <td>₱5,800.00</td>
+                <td>July 28, 2026</td>
+                <td>Bank Transfer</td>
+                <td><span class="badge paid">Verified</span></td>
+                <td><a href="#">Download PDF</a></td>
+              </tr>
+              <tr>
+                <td>June 2026</td>
+                <td>₱5,750.00</td>
+                <td>June 29, 2026</td>
+                <td>Over-the-Counter</td>
+                <td><span class="badge paid">Verified</span></td>
+                <td><a href="#">Download PDF</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="item footer"><p>© 2026 Serenity Apartment — Tenant Portal</p></div>
+  </div>
+</body>
+</html>
