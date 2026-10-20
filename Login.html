@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="login-body">
+
+  <div class="login-card">
+    <!-- Apartment Name & Tagline -->
+    <div class="brand-section">
+      <h1>Serenity Apartment</h1>
+      <p class="tagline">Your comfortable home, managed with ease.</p>
+    </div>
+
+    <!-- Welcome Heading -->
+    <h2 class="welcome-text">Welcome Back Serenitenants!</h2>
+
+    <!-- Login Form -->
+    <form class="login-form">
+      <!-- Role Select -->
+      <div class="form-group">
+        <label>Login as:</label>
+        <div class="select-wrapper">
+          <select id="role">
+            <option value="admin" selected>Admin</option>
+            <option value="tenant">Tenant</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Username -->
+      <div class="form-group">
+        <label>Username</label>
+        <div class="input-wrapper">
+          <input type="text" placeholder="Enter Username" />
+        </div>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label>Password</label>
+        <div class="input-wrapper">
+          <input type="password" placeholder="Enter Password" />
+        </div>
+      </div>
+
+      <!-- Remember Me & Forgot Password -->
+      <div class="form-options">
+        <label class="remember-me">
+          <input type="checkbox" /> Remember me
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+
+      <!-- Login Button -->
+      <a href="dashboard.html" class="btn login-btn">Login</a>
+
+      <!-- Sign in with Email -->
+      <button type="button" class="btn email-btn">Sign in with Email</button>
+
+      <!-- Contact Link -->
+      <p class="contact-text">Don't have an account? <a href="#">Contact us</a></p>
+    </form>
+  </div>
+
+</body>
+</html>
