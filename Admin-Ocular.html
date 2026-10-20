@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ocular Schedule — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <div class="item header">
+      <h2>Serenity Apartment — Ocular Schedule</h2>
+      <div class="header-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026 — 12:43 PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="item sidebar">
+      <div class="sidebar-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026</span>
+        </div>
+      </div>
+      <hr class="sidebar-divider" />
+      <nav>
+        <ul>
+          <li><a href="Admin-Dashboard.html">Dashboard Overview</a></li>
+          <li><a href="Admin-Tenants.html">Tenants</a></li>
+          <li><a href="Admin-Billings.html">Billings</a></li>
+          <li><a href="Admin-Announcement.html">Announcements</a></li>
+          <li><a href="Admin-Reservation.html">Reservations</a></li>
+          <li><a href="Admin-Ocular.html" style="background:#4F7C82; color:#fff;">Ocular Schedule</a></li>
+          <li><a href="Admin-Maintenance.html">Maintenance Requests</a></li>
+          <li><a href="Admin-Helpdesk.html">Help Desk</a></li>
+        </ul>
+      </nav>
+      <hr class="sidebar-divider" />
+      <a href="logout.html" class="logout-btn">Logout</a>
+    </div>
+    <div class="item content">
+      <div class="three-card-grid" style="margin-bottom:20px;">
+        <div class="page-card">
+          <h4>Marvin Espina — 0917-123-4567</h4>
+          <p><span class="label">Tour Unit:</span> Unit 34</p>
+          <p><span class="label">Schedule:</span> Sept 24, 2026 — 9:00 AM</p>
+          <p><span class="label">Notes:</span> Wants to see 2-bedroom unit with balcony</p>
+          <p><span class="label">Status:</span> <span class="badge paid">Scheduled</span></p>
+          <div class="btn-group">
+            <button class="btn green">Confirm</button>
+            <button class="btn purple">Reschedule</button>
+            <button class="btn blue">Completed</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Joaquin Bendulo — 0918-234-5678</h4>
+          <p><span class="label">Tour Unit:</span> Unit 05</p>
+          <p><span class="label">Schedule:</span> Sept 18, 2026 — 2:00 PM</p>
+          <p><span class="label">Notes:</span> Bring copy of floor plan</p>
+          <p><span class="label">Status:</span> <span class="badge paid">Scheduled</span></p>
+          <div class="btn-group">
+            <button class="btn green">Confirm</button>
+            <button class="btn purple">Reschedule</button>
+            <button class="btn blue">Completed</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Pauleen Crispino — 0919-345-6789</h4>
+          <p><span class="label">Tour Unit:</span> Unit 23</p>
+          <p><span class="label">Schedule:</span> Sept 20, 2026 — 10:30 AM</p>
+          <p><span class="label">Notes:</span> With companion — 2 persons</p>
+          <p><span class="label">Status:</span> <span class="badge pending">Pending Confirmation</span></p>
+          <div class="btn-group">
+            <button class="btn green">Confirm</button>
+            <button class="btn purple">Reschedule</button>
+            <button class="btn blue">Completed</button>
+          </div>
+        </div>
+      </div>
+      <div class="three-card-grid">
+        <div class="page-card">
+          <h4>Ishshah Lopez — 0920-456-7890</h4>
+          <p><span class="label">Tour Unit:</span> Unit 07</p>
+          <p><span class="label">Schedule:</span> Sept 26, 2026 — 3:00 PM</p>
+          <p><span class="label">Notes:</span> Interested in parking slot availability</p>
+          <p><span class="label">Status:</span> <span class="badge paid">Scheduled</span></p>
+          <div class="btn-group">
+            <button class="btn green">Confirm</button>
+            <button class="btn purple">Reschedule</button>
+            <button class="btn blue">Completed</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Ysabel Lozada — 0921-567-8901</h4>
+          <p><span class="label">Tour Unit:</span> Unit 22</p>
+          <p><span class="label">Schedule:</span> Sept 28, 2026 — 1:00 PM</p>
+          <p><span class="label">Notes:</span> Quick ocular only — 15 mins</p>
+          <p><span class="label">Status:</span> <span class="badge overdue">No-Show</span></p>
+          <div class="btn-group">
+            <button class="btn green">Confirm</button>
+            <button class="btn purple">Reschedule</button>
+            <button class="btn blue">Completed</button>
+          </div>
+        </div>
+        <div class="page-card">
+          <h4>Jhamez Guarico — 0922-678-9012</h4>
+          <p><span class="label">Tour Unit:</span> Unit 18</p>
+          <p><span class="label">Schedule:</span> Sept 30, 2026 — 4:00 PM</p>
+          <p><span class="label">Notes:</span> Already paid reservation fee</p>
+          <p><span class="label">Status:</span> <span class="badge paid">Confirmed</span></p>
+          <div class="btn-group">
+            <button class="btn green">Confirm</button>
+           <button class="btn purple">Reschedule</button>
+            <button class="btn blue">Completed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item footer">
+      <p>© 2026 Serenity Apartment | All Rights Reserved</p>
+    </div>
+  </div>
+</body>
+</html>
