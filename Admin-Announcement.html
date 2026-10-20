@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Announcements — Serenity Apartment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <div class="container">
+    <!-- HEADER -->
+    <div class="item header">
+      <h2>Serenity Apartment — Announcements</h2>
+      <div class="header-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026 — 12:43 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="item sidebar">
+      <div class="sidebar-profile">
+        <img src="admin-profile.png" alt="Admin Profile" class="profile-pic" />
+        <div class="profile-info">
+          <span class="profile-name">Admin</span>
+          <span class="profile-date">Sept 15, 2026</span>
+        </div>
+      </div>
+      <hr class="sidebar-divider" />
+      <nav>
+        <ul>
+          <li><a href="Admin-Dashboard.html">Dashboard Overview</a></li>
+          <li><a href="Admin-Tenants.html">Tenants</a></li>
+          <li><a href="Admin-Billings.html">Billings</a></li>
+          <li><a href="Admin-Announcement.html" style="background:#4F7C82; color:#fff;">Announcements</a></li>
+          <li><a href="Admin-Reservation.html">Reservations</a></li>
+          <li><a href="Admin-Ocular.html">Ocular Schedule</a></li>
+          <li><a href="Admin-Maintenance.html">Maintenance Requests</a></li>
+          <li><a href="Admin-Helpdesk.html">Help Desk</a></li>
+        </ul>
+      </nav>
+      <hr class="sidebar-divider" />
+      <a href="logout.html" class="logout-btn">Logout</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="item content">
+
+      <!-- ✅ ROW 1 — Cards 1-3 (Original) -->
+      <div class="three-card-grid">
+        <div class="page-card card-urgent">
+          <h4>Elevator Maintenance</h4>
+          <p><span class="label">Category:</span> <span class="badge urgent">Urgent Advisory</span></p>
+          <p><span class="label">Description:</span> Elevator will be unavailable on Sept 20 from 9:00 AM — 4:00 PM for monthly maintenance.</p>
+          <p><span class="label">Audience:</span> All Tenants</p>
+          <p><span class="label">Schedule:</span> Sept 20, 2026</p>
+          <p><span class="label">Expires:</span> Sept 20, 2026</p>
+          <div class="btn-group">
+            <button class="btn red">Publish Announcement</button>
+          </div>
+        </div>
+
+        <div class="page-card card-maintenance">
+          <h4>Scheduled Water Outage</h4>
+          <p><span class="label">Category:</span> <span class="badge maintenance">Maintenance</span></p>
+          <p><span class="label">Description:</span> Water supply will be temporarily interrupted on Sept 22 from 1:00 PM — 3:00 PM for pipe replacement.</p>
+          <p><span class="label">Audience:</span> Floors 1–3</p>
+          <p><span class="label">Schedule:</span> Sept 22, 2026</p>
+          <p><span class="label">Expires:</span> Sept 22, 2026</p>
+          <div class="btn-group">
+            <button class="btn blue">Publish Announcement</button>
+          </div>
+        </div>
+
+        <div class="page-card card-news">
+          <h4>Quiet Hours Reminder</h4>
+          <p><span class="label">Category:</span> <span class="badge general">General News</span></p>
+          <p><span class="label">Description:</span> Please observe quiet hours from 10:00 PM to 6:00 AM. Thank you for your cooperation.</p>
+          <p><span class="label">Audience:</span> All Tenants</p>
+          <p><span class="label">Schedule:</span> Immediate</p>
+          <p><span class="label">Expires:</span> Permanent</p>
+          <div class="btn-group">
+            <button class="btn green">Publish Announcement</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ ROW 2 — Cards 4-6 (NEW) -->
+      <div class="three-card-grid">
+        <div class="page-card card-info">
+          <h4>Monthly Fire Drill</h4>
+          <p><span class="label">Category:</span> <span class="badge info">Safety Advisory</span></p>
+          <p><span class="label">Description:</span> Mandatory fire drill will be held on Sept 25 starting at 10:00 AM. Please follow evacuation routes.</p>
+          <p><span class="label">Audience:</span> All Tenants</p>
+          <p><span class="label">Schedule:</span> Sept 25, 2026 — 10:00 AM</p>
+          <p><span class="label">Expires:</span> Sept 25, 2026</p>
+          <div class="btn-group">
+            <button class="btn amber">Publish Announcement</button>
+          </div>
+        </div>
+
+        <div class="page-card card-event">
+          <h4>Community Clean-Up Day</h4>
+          <p><span class="label">Category:</span> <span class="badge event">Community Event</span></p>
+          <p><span class="label">Description:</span> Join us for a community clean-up on Oct 03 from 8:00 AM — 11:00 AM. Cleaning supplies provided.</p>
+          <p><span class="label">Audience:</span> All Residents</p>
+          <p><span class="label">Schedule:</span> Oct 03, 2026 — 8:00 AM</p>
+          <p><span class="label">Expires:</span> Oct 03, 2026</p>
+          <div class="btn-group">
+            <button class="btn purple">Publish Announcement</button>
+          </div>
+        </div>
+
+        <div class="page-card card-reminder">
+          <h4>Monthly Rent Reminder</h4>
+          <p><span class="label">Category:</span> <span class="badge reminder">Payment Notice</span></p>
+          <p><span class="label">Description:</span> Monthly rent is due on or before the 5th of every month. Late payments incur a 5% penalty.</p>
+          <p><span class="label">Audience:</span> All Tenants</p>
+          <p><span class="label">Schedule:</span> Due by Oct 05, 2026</p>
+          <p><span class="label">Expires:</span> Oct 05, 2026</p>
+          <div class="btn-group">
+            <button class="btn teal">Publish Announcement</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="item footer">
+      <p>© 2026 Serenity Apartment | All Rights Reserved</p>
+    </div>
+  </div>
+</body>
+</html>
